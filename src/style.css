@@ -1,0 +1,18 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+  font-family: PingFangSC-Medium, PingFang SC;
+}
+
+div{
+  box-sizing: border-box;
+}
+#app{
+  width       : 100%;
+  max-width   : 570px !important;
+  margin-left : auto !important;
+  margin-right: auto !important;
+}

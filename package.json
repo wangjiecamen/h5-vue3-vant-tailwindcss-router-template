@@ -1,0 +1,31 @@
+{
+  "name": "h5-vue3-vant-tailwindcss-router-template",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vant": "^4.7.3",
+    "vue": "^3.3.8",
+    "vue-router": "^4.2.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.9.2",
+    "@vitejs/plugin-vue": "^4.5.0",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "postcss-mobile-forever": "^4.0.0",
+    "rollup-plugin-visualizer": "^5.9.2",
+    "tailwindcss": "^3.3.5",
+    "typescript": "^5.2.2",
+    "unplugin-auto-import": "^0.16.7",
+    "unplugin-vue-components": "^0.25.2",
+    "vconsole": "^3.15.1",
+    "vite": "^5.0.0",
+    "vue-tsc": "^1.8.22"
+  }
+}
