@@ -11,9 +11,12 @@
   "dependencies": {
     "vant": "^4.7.3",
     "vue": "^3.3.8",
-    "vue-router": "^4.2.5"
+    "vue-router": "^4.2.5",
+    "@yw/hub.utilities.endpoint": "^0.1.13"
   },
   "devDependencies": {
+    "@yw/eslint-config": "1.0.2",
+    "@vue/tsconfig": "^0.4.0",
     "@types/node": "^20.9.2",
     "@vitejs/plugin-vue": "^4.5.0",
     "autoprefixer": "^10.4.16",
