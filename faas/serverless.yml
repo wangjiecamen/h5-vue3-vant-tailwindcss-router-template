@@ -1,0 +1,47 @@
+# 需将<app-name>替换成实际应用名称
+app: <app-name>
+component: scf
+inputs:
+  eip: false
+  environment:
+    variables:
+      TZ: Asia/Shanghai
+  layers:
+    - name: chinagoods-koa-layer
+      version: 4
+  events:
+    - apigw:
+        parameters:
+          endpoints:
+            - apiId: api-<app-name>
+              enableCORS: false
+              function:
+                functionQualifier: $DEFAULT
+                isIntegratedResponse: false
+              isBase64Encoded: true
+              method: ANY
+              path: /
+              serviceTimeout: 15
+          environment: release
+          protocols:
+            - http
+            - https
+          serviceName: <app-name>-${stage}
+          serviceId: ${env:SERVICE_ID}
+  initTimeout: 65
+  memorySize: 128
+  name: ${name}-${stage}
+  namespace: default
+  publicAccess: true
+  region: ap-shanghai
+  runtime: Nodejs14.18
+  src:
+    src: ./
+    exclude:
+      - .env
+      - 'node_modules/**'
+  timeout: 3
+  type: web
+name: <app-name>
+org: '1301563501'
+stage: dev

@@ -1,12 +1,14 @@
 {
   "name": "h5-vue3-vant-tailwindcss-router-template",
-  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview"
+  },
+  "repository": {
+    "url": "http://172.18.7.16:4873/"
   },
   "dependencies": {
     "vant": "^4.7.3",

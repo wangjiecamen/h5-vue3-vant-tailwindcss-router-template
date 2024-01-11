@@ -1,0 +1,20 @@
+{
+  "name": "faas",
+  "version": "1.0.0",
+  "author": "Zan",
+  "license": "MIT",
+  "main": "sls.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@koa/router": "^8.0.8",
+    "koa": "^2.14.2",
+    "koa-bodyparser": "^4.4.1",
+    "koa-proxies": "^0.12.3",
+    "koa-router": "^8.0.8",
+    "koa-sendfile": "^2.0.1",
+    "koa-static": "^5.0.0",
+    "koa-views": "^8.0.0"
+  }
+}
